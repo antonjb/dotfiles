@@ -88,7 +88,7 @@ alias badge="tput bel"
 alias map="xargs -n1"
 
 # CLT/SPICE specific
-alias cltasset='cd ~/../../Volumes/duit/spice/assets/'
-alias cltcodelib='cd ~/../../Volumes/duit/shared/Code\ Library/'
+alias cltasset='cd /Volumes/duit/spice/assets/'
+alias cltcodelib='cd /Volumes/duit/shared/Code\ Library/'
 alias sublspice='subl --project spice.sublime-project'
 alias cltinit='ruby /Volumes/duit/shared/Code\ Library/CLI/cltInit/cltinit.rb'
