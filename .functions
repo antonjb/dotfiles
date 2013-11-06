@@ -1,3 +1,26 @@
+####################
+# CLT/SPICE specific
+
+cltbuild() {
+	echo 'CLT Build'
+	grunt
+	bundle exec middleman build -c
+	echo 'Finished. Hopefully...'
+}
+
+# Toggle hidden files visibility
+toggleHidden() {
+	isVisible="$(defaults read com.apple.finder AppleShowAllFiles)"
+	if [ "$isVisible" == FALSE ]
+	then
+		defaults write com.apple.finder AppleShowAllFiles TRUE
+	else
+		defaults write com.apple.finder AppleShowAllFiles FALSE
+	fi
+
+	killall Finder;
+}
+
 # Simple calculator
 function calc() {
 	local result=""
