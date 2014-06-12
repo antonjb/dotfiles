@@ -91,6 +91,6 @@ alias map="xargs -n1"
 alias cltasset='cd /Volumes/duit/spice/assets/'
 alias cltcodelib='cd /Volumes/duit/shared/Code\ Library/'
 alias sublspice='subl --project spice.sublime-project'
-alias cltinit='ruby /Volumes/duit/shared/Code\ Library/CLI/cltInit/cltinit.rb'
+alias cltinit='grunt-init /Volumes/duit/shared/Code\ Library/Grunt/clt-init'
 alias mm='bundle exec middleman'
 alias mb='bundle exec middleman build'
