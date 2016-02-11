@@ -15,7 +15,7 @@ brew upgrade
 #brew install bash
 
 # Install wget with IRI support
-#brew install wget --enable-iri
+brew install wget --enable-iri
 
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
@@ -36,13 +36,13 @@ brew upgrade
 #brew install ack
 #brew install exiv2
 brew install git
-#brew install imagemagick
+brew install imagemagick
 #brew install lynx
 brew install node
 #brew install pigz
 #brew install rename
 #brew install rhino
-brew install tree
+# brew install tree
 #brew install webkit2png
 #brew install zopfli
 
@@ -59,7 +59,7 @@ function installcask() {
 
 installcask dropbox
 installcask google-chrome
-installcask google-chrome-canary
+# installcask google-chrome-canary
 #installcask imagealpha
 installcask imageoptim
 installcask iterm2
@@ -70,8 +70,8 @@ installcask sublime-text
 #installcask tor-browser
 #installcask transmission
 #installcask ukelele
-installcask virtualbox
-installcask vlc
+# installcask virtualbox
+# installcask vlc
 
 # Remove outdated versions from the cellar
 brew cleanup

@@ -1,13 +1,3 @@
-####################
-# CLT/SPICE specific
-
-cltbuild() {
-	echo 'CLT Build'
-	grunt
-	bundle exec middleman build -c
-	echo 'Finished. Hopefully...'
-}
-
 # Toggle hidden files visibility
 toggleHidden() {
 	isVisible="$(defaults read com.apple.finder AppleShowAllFiles)"
@@ -117,7 +107,7 @@ function gitio() {
 	curl -i http://git.io/ -F "url=${2}" -F "code=${1}"
 }
 
-# Start an HTTP server from a directory, optionally specifying the port
+# Start a HTTP server from a directory, optionally specifying the port
 function server() {
 	local port="${1:-8000}"
 	sleep 1 && open "http://localhost:${port}/" &
@@ -259,34 +249,4 @@ tell application "Reminders"
 	end tell
 end tell
 EOF
-}
-
-# Manually remove a downloaded app or file from the quarantine
-#function unquarantine() {
-#	for attribute in com.apple.metadata:kMDItemDownloadedDate com.apple.metadata:kMDItemWhereFroms com.apple.quarantine; do
-#		xattr -r -d "$attribute" "$@"
-#	done
-#}
-
-# Install Grunt plugins and add them as `devDependencies` to `package.json`
-# Usage: `gi contrib-watch contrib-uglify zopfli`
-#function gi() {
-#	local IFS=,
-#	eval npm install --save-dev grunt-{"$*"}
-#}
-
-# animated gifs from any video
-# from alex sexton   gist.github.com/SlexAxton/4989674
-gifify() {
-  if [[ -n "$1" ]]; then
-    if [[ $2 == '--good' ]]; then
-      ffmpeg -i $1 -r 10 -vcodec png out-static-%05d.png
-      time convert -verbose +dither -layers Optimize -resize 600x600\> out-static*.png  GIF:- | gifsicle --colors 128 --delay=5 --loop --optimize=3 --multifile - > $1.gif
-      rm out-static*.png
-    else
-      ffmpeg -i $1 -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > $1.gif
-    fi
-  else
-    echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
-  fi
 }

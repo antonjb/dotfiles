@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# ~/.osx — http://sow.so/osx
-
 # Ask for the administrator password upfront
 sudo -v
 
@@ -38,7 +36,7 @@ defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreS
 # defaults write NSGlobalDomain AppleHighlightColor -string '0.764700 0.976500 0.568600'
 
 # Set sidebar icon size to medium
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
+# defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 # Always show scrollbars
 # defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
@@ -85,11 +83,6 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
 
-# Fix for the ancient UTF-8 bug in QuickLook (http://mths.be/bbo)
-# Commented out, as this is known to cause problems when saving files in
-# Adobe Illustrator CS5 :(
-#echo "0x08000100:0" > ~/.CFUserTextEncoding
-
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 # sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
@@ -104,7 +97,7 @@ defaults write com.apple.helpviewer DevMode -bool true
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -146,8 +139,8 @@ sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
 #sudo osascript -e 'tell application "System Events" to set UI elements enabled to true'
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+# defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Follow the keyboard focus while zoomed in
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
@@ -194,10 +187,10 @@ defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
+# defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 # Enable HiDPI display modes (requires restart)
-sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+# sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 ###############################################################################
 # Finder                                                                      #
@@ -219,10 +212,10 @@ defaults write com.apple.finder QuitMenuItem -bool true
 # defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Finder: show status bar
-defaults write com.apple.finder ShowStatusBar -bool false
+defaults write com.apple.finder ShowStatusBar -bool true
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
@@ -231,7 +224,7 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+# defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
@@ -259,27 +252,27 @@ defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # Show item info near icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
 
 # Show item info to the right of the icons on the desktop
 # /usr/libexec/PlistBuddy -c "Set DesktopViewSettings:IconViewSettings:labelOnBottom false" ~/Library/Preferences/com.apple.finder.plist
 
 # Enable snap-to-grid for icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # Increase grid spacing for icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
 
 # Increase the size of icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
 
 # Use list view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
@@ -289,20 +282,20 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Empty Trash securely by default
-defaults write com.apple.finder EmptyTrashSecurely -bool true
+# defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Enable the MacBook Air SuperDrive on any Mac
-sudo nvram boot-args="mbasd=1"
+# sudo nvram boot-args="mbasd=1"
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
 # Remove Dropbox’s green checkmark icons in Finder
-file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
-[ -e "$file" ] && mv -f "$file" "$file.bak"
+# file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
+# [ -e "$file" ] && mv -f "$file" "$file.bak"
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -315,10 +308,10 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool true
 # defaults write com.apple.dock tilesize -int 36
 
 # Enable spring loading for all Dock items
-defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+# defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 # Show indicator lights for open applications in the Dock
-defaults write com.apple.dock show-process-indicators -bool true
+# defaults write com.apple.dock show-process-indicators -bool true
 
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
@@ -336,16 +329,16 @@ defaults write com.apple.dock show-process-indicators -bool true
 # defaults write com.apple.dock expose-group-by-app -bool false
 
 # Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
+# defaults write com.apple.dashboard mcx-disabled -bool true
 
 # Don’t show Dashboard as a Space
-defaults write com.apple.dock dashboard-in-overlay -bool true
+# defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Don’t automatically rearrange Spaces based on most recent use
-defaults write com.apple.dock mru-spaces -bool false
+# defaults write com.apple.dock mru-spaces -bool false
 
 # Remove the auto-hiding Dock delay
-defaults write com.apple.dock autohide-delay -float 0
+# defaults write com.apple.dock autohide-delay -float 0
 # Remove the animation when hiding/showing the Dock
 # defaults write com.apple.dock autohide-time-modifier -float 0
 
@@ -432,19 +425,19 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 ###############################################################################
 
 # Disable the iTunes store link arrows
-defaults write com.apple.iTunes show-store-link-arrows -bool false
+# defaults write com.apple.iTunes show-store-link-arrows -bool false
 
 # Disable the Genius sidebar in iTunes
-defaults write com.apple.iTunes disableGeniusSidebar -bool true
+# defaults write com.apple.iTunes disableGeniusSidebar -bool true
 
 # Disable radio stations in iTunes
-defaults write com.apple.iTunes disableRadio -bool true
+# defaults write com.apple.iTunes disableRadio -bool true
 
 # Make ⌘ + F focus the search input in iTunes
 # To use these commands in another language, browse iTunes’s package contents,
 # open `Contents/Resources/your-language.lproj/Localizable.strings`, and look
 # for `kHiddenMenuItemTargetSearch`.
-defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
+# defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
 
 ###############################################################################
 # Mail                                                                        #
@@ -465,7 +458,7 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 ###############################################################################
 
 # Hide Spotlight tray-icon (and subsequent helper)
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
@@ -500,7 +493,7 @@ sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 ###############################################################################
 
 # Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
+# defaults write com.apple.terminal StringEncodings -array 4
 
 # Use a Solarized Dark by default in Terminal.app https://github.com/tomislav/osx-terminal.app-colors-solarized
 # open "$HOME/init/SolarizedDark.terminal"
@@ -518,7 +511,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 ###############################################################################
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
-# defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
 # hash tmutil &> /dev/null && sudo tmutil disablelocal
@@ -561,8 +554,8 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 ###############################################################################
 
 # Allow installing user scripts via GitHub or Userscripts.org
-defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
-defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
+# defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
+# defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
 
 ###############################################################################
 # Twitter.app                                                                 #
@@ -572,22 +565,22 @@ defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://
 # defaults write com.twitter.twitter-mac AutomaticQuoteSubstitutionEnabled -bool false
 
 # Show the app window when clicking the menu icon
-defaults write com.twitter.twitter-mac MenuItemBehavior -int 1
+# defaults write com.twitter.twitter-mac MenuItemBehavior -int 1
 
 # Enable the hidden ‘Develop’ menu
 # defaults write com.twitter.twitter-mac ShowDevelopMenu -bool true
 
 # Open links in the background
-defaults write com.twitter.twitter-mac openLinksInBackground -bool true
+# defaults write com.twitter.twitter-mac openLinksInBackground -bool true
 
 # Allow closing the ‘new tweet’ window by pressing `Esc`
-defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
+# defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
 
 # Show full names rather than Twitter handles
 # defaults write com.twitter.twitter-mac ShowFullNames -bool true
 
 # Hide the app in the background if it’s not the front-most window
-defaults write com.twitter.twitter-mac HideInBackground -bool true
+# defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 ###############################################################################
 # Keep additonal commands separate so diff in future is easy                  #
@@ -603,17 +596,17 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 # defaults write "com.apple.sound.beep.feedback" -int 0
 # defaults write "com.apple.systemsound" "com.apple.sound.uiaudio.enabled" -int 0
 
+# Top left screen corner → Mission Control
+defaults write com.apple.dock wvous-tl-corner -int 2
+defaults write com.apple.dock wvous-tl-modifier -int 0
 # Bottom left screen corner → Desktop
 # defaults write com.apple.dock wvous-bl-corner -int 4
 # defaults write com.apple.dock wvous-bl-modifier -int 0
-# Top right screen corner → Mission Control
-# defaults write com.apple.dock wvous-tr-corner -int 2
-# defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom right screen corner → Start screen saver
 # defaults write com.apple.dock wvous-br-corner -int 5
 # defaults write com.apple.dock wvous-br-modifier -int 0
 
-# Spectacle defaults http://spectacleapp.com/
+# Spectacle defaults q
 # defaults write com.divisiblebyzero.Spectacle MoveToCenter      -data "62706c6973743030d4010203040506191a582476657273696f6e58246f626a65637473592461726368697665725424746f7012000186a0a40708111255246e756c6cd4090a0b0c0d0e0f10596d6f64696669657273546e616d65576b6579436f64655624636c6173731119008002100880035c4d6f7665546f43656e746572d2131415165a24636c6173736e616d655824636c6173736573585a4b486f744b6579a21718585a4b486f744b6579584e534f626a6563745f100f4e534b657965644172636869766572d11b1c54726f6f74800108111a232d32373c424b555a62696c6e70727f848f98a1a4adb6c8cbd00000000000000101000000000000001d000000000000000000000000000000d2"
 # defaults write com.divisiblebyzero.Spectacle MoveToFullscreen  -data "62706c6973743030d4010203040506191a582476657273696f6e58246f626a65637473592461726368697665725424746f7012000186a0a40708111255246e756c6cd4090a0b0c0d0e0f10596d6f64696669657273546e616d65576b6579436f64655624636c6173731119008002100380035f10104d6f7665546f46756c6c73637265656ed2131415165a24636c6173736e616d655824636c6173736573585a4b486f744b6579a21718585a4b486f744b6579584e534f626a6563745f100f4e534b657965644172636869766572d11b1c54726f6f74800108111a232d32373c424b555a62696c6e7072858a959ea7aab3bcced1d60000000000000101000000000000001d000000000000000000000000000000d8"
 # defaults write com.divisiblebyzero.Spectacle MoveToLeftHalf    -data "62706c6973743030d4010203040506191a582476657273696f6e58246f626a65637473592461726368697665725424746f7012000186a0a40708111255246e756c6cd4090a0b0c0d0e0f10596d6f64696669657273546e616d65576b6579436f64655624636c6173731109008002107b80035e4d6f7665546f4c65667448616c66d2131415165a24636c6173736e616d655824636c6173736573585a4b486f744b6579a21718585a4b486f744b6579584e534f626a6563745f100f4e534b657965644172636869766572d11b1c54726f6f74800108111a232d32373c424b555a62696c6e70728186919aa3a6afb8cacdd20000000000000101000000000000001d000000000000000000000000000000d4"

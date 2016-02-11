@@ -40,7 +40,7 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 alias sudo='sudo '
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; sudo npm update npm -g; npm update -g; sudo gem update'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -86,11 +86,3 @@ alias badge="tput bel"
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
 alias map="xargs -n1"
-
-# CLT/SPICE specific
-alias cltasset='cd /Volumes/duit/spice/assets/'
-alias cltcodelib='cd /Volumes/duit/shared/Code\ Library/'
-alias sublspice='subl --project spice.sublime-project'
-alias cltinit='grunt-init /Volumes/duit/shared/Code\ Library/Grunt/clt-init'
-alias mm='bundle exec middleman'
-alias mb='bundle exec middleman build'
