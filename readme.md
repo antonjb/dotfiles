@@ -22,6 +22,14 @@ DotFiles for setting up a machine
 ## Outside of Brew/ZSH
 
 1. Divvy (purchased through Appstore)
+2. Alfred
+   - Workflows:
+     - [Can I use](https://github.com/willfarrell/alfred-caniuse-workflow)
+     - [Case Converter](http://dfay.fastmail.fm/alfred/)
+     - Dash
+     - Google Selection
+     - [MDN Search](https://github.com/gilbarbara/alfred-workflows/tree/master/mdn-search)
+     - Paste Cleanly \* Plain Text
 
 ## Known Issues
 
