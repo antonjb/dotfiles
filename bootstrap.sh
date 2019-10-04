@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Update
 brew update
 brew upgrade
@@ -42,3 +44,13 @@ brew cask install visual-studio-code
 
 # Clean
 brew cleanup
+
+# install vscode extensions
+while read extension; do
+    code --install-extension $extension
+done <<EOL
+coenraads.bracket-pair-colorizer-2
+dbaeumer.vscode-eslint
+eamodio.gitlens
+esbenp.prettier-vscode
+EOL
