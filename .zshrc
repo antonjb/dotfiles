@@ -38,6 +38,6 @@ alias ohmyzsh="code ~/.oh-my-zsh"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias o="open"
-alias oo="tab"
+alias oo="open ."
 
 export EDITOR="code"
