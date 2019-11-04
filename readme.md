@@ -30,6 +30,7 @@ DotFiles for setting up a machine
      - Google Selection
      - [MDN Search](https://github.com/gilbarbara/alfred-workflows/tree/master/mdn-search)
      - Paste Cleanly \* Plain Text
+   - Text Expansion: stored in Dropbox
 
 ## Known Issues
 

@@ -39,7 +39,6 @@ brew cask install iterm2
 brew cask install slack
 brew cask install skitch
 brew cask install spotify
-brew cask install textexpander5
 brew cask install visual-studio-code
 
 # Clean
