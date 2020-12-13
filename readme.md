@@ -31,7 +31,3 @@ DotFiles for setting up a machine
      - [MDN Search](https://github.com/gilbarbara/alfred-workflows/tree/master/mdn-search)
      - Paste Cleanly \* Plain Text
    - Text Expansion: stored in Dropbox
-
-## Known Issues
-
-- Even though git is installed with Brew I find the version can still the Mac default

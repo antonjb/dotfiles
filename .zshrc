@@ -14,24 +14,10 @@ export NVM_DIR="$HOME/.nvm"
 plugins=(git osx brew vscode yarn)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # User configuration
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-POWERLEVEL9K_MODE="nerdfont-complete"
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history user)
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=""
 
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
