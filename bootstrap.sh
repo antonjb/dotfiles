@@ -31,7 +31,6 @@ brew install --cask font-firacode-nerd-font
 brew install --cask imageoptim
 brew install --cask iterm2
 brew install --cask slack
-brew install --cask skitch
 brew install --cask spotify
 brew install --cask visual-studio-code
 
