@@ -10,6 +10,7 @@ brew tap homebrew/cask-versions
 
 # Install
 brew install git
+brew install wget
 brew install guetzli
 brew install imagemagick
 brew install nvm
