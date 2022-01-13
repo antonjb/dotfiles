@@ -41,7 +41,6 @@ brew cleanup
 while read extension; do
     code --install-extension $extension
 done <<EOL
-coenraads.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
