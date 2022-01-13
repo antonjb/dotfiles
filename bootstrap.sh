@@ -34,6 +34,7 @@ brew install --cask font-fira-code
 brew install --cask font-fira-code-nerd-font
 brew install --cask imageoptim
 brew install --cask iterm2
+brew install --cask kaleidoscope
 brew install --cask pixelsnap
 brew install --cask slack
 brew install --cask spotify
