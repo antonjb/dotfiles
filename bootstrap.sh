@@ -29,7 +29,7 @@ brew install --cask firefox
 brew install --cask firefox-developer-edition
 brew install --cask firefox-nightly
 brew install --cask font-fira-code
-brew install --cask font-firacode-nerd-font
+brew install --cask font-fira-code-nerd-font
 brew install --cask imageoptim
 brew install --cask iterm2
 brew install --cask slack
