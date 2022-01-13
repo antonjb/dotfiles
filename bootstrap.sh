@@ -20,6 +20,7 @@ brew install romkatv/powerlevel10k/powerlevel10k
 
 # Casks
 brew install --cask 1password
+brew install --cask alfred
 brew install --cask dash
 brew install --cask dropbox
 brew install --cask google-chrome
