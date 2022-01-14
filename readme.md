@@ -31,3 +31,4 @@ DotFiles for setting up a machine
      - [MDN Search](https://github.com/gilbarbara/alfred-workflows/tree/master/mdn-search)
      - Paste Cleanly \* Plain Text
    - Text Expansion: stored in Dropbox
+   - Theme: [Superhuman Powerpack Themes](https://github.com/chrismessina/alfred-theme-superhuman)
