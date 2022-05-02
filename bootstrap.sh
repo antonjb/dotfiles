@@ -15,7 +15,6 @@ brew install guetzli
 brew install imagemagick
 # Brew not supported. Install following documentation
 # brew install nvm
-brew install yarn
 brew install zsh-completions
 brew install romkatv/powerlevel10k/powerlevel10k
 
