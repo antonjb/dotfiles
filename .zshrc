@@ -11,7 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git macos brew vscode yarn)
+plugins=(git macos brew vscode)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
