@@ -27,6 +27,7 @@ brew install --cask dash
 brew install --cask dropbox
 brew install --cask google-chrome
 brew install --cask google-chrome-canary
+brew install --cask figma
 brew install --cask firefox
 brew install --cask firefox-developer-edition
 brew install --cask firefox-nightly
