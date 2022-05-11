@@ -22,6 +22,7 @@ brew install romkatv/powerlevel10k/powerlevel10k
 brew install --cask 1password
 brew install --cask alfred
 brew install --cask around
+brew install --cask bitwarden
 brew install --cask cleanshot
 brew install --cask dash
 brew install --cask dropbox
