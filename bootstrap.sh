@@ -25,6 +25,7 @@ brew install --cask around
 brew install --cask bitwarden
 brew install --cask cleanshot
 brew install --cask dash
+brew install --cask docker
 brew install --cask dropbox
 brew install --cask google-chrome
 brew install --cask google-chrome-canary
