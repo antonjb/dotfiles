@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Update
 brew update
@@ -9,14 +9,11 @@ brew tap homebrew/cask-fonts
 brew tap homebrew/cask-versions
 
 # Install
+brew install awscli
+brew install fnm
 brew install git
+brew install pyenv
 brew install wget
-brew install guetzli
-brew install imagemagick
-# Brew not supported. Install following documentation
-# brew install nvm
-brew install zsh-completions
-brew install romkatv/powerlevel10k/powerlevel10k
 
 # Casks
 brew install --cask 1password
@@ -26,7 +23,6 @@ brew install --cask bitwarden
 brew install --cask cleanshot
 brew install --cask dash
 brew install --cask docker
-brew install --cask dropbox
 brew install --cask google-chrome
 brew install --cask google-chrome-canary
 brew install --cask figma
@@ -34,15 +30,22 @@ brew install --cask firefox
 brew install --cask firefox-developer-edition
 brew install --cask firefox-nightly
 brew install --cask font-fira-code-nerd-font
+brew install --cask font-monaspace
 brew install --cask imageoptim
-brew install --cask iterm2
+brew install --cask insomnia
 brew install --cask kaleidoscope
+brew install --cask microsoft-edge
 brew install --cask moom
+brew install --cask ngrok
 brew install --cask pixelsnap
+brew install --cask safari-technology-preview
 brew install --cask slack
 brew install --cask spotify
 brew install --cask todoist
 brew install --cask visual-studio-code
+brew install --cask vlc
+brew install --cask warp
+brew install --cask zoom
 
 # Clean
 brew cleanup
@@ -54,4 +57,12 @@ done <<EOL
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
+figma.figma-vscode-extension
+GitHub.copilot
+GitHub.copilot-chat
+GitHub.copilot-labs
+kaleidoscope-app.vscode-ksdiff
+ms-vsliveshare.vsliveshare
+unifiedjs.vscode-mdx
+alefragnani.project-manager
 EOL
