@@ -40,7 +40,6 @@ brew install --cask ngrok
 brew install --cask pixelsnap
 brew install --cask safari-technology-preview
 brew install --cask slack
-brew install --cask spotify
 brew install --cask todoist
 brew install --cask visual-studio-code
 brew install --cask vlc
