@@ -16,7 +16,7 @@ brew install pyenv
 brew install wget
 
 # Casks
-brew install --cask 1password
+brew install --cask 1password7
 brew install --cask alfred
 brew install --cask around
 brew install --cask bitwarden
