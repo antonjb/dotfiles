@@ -1,29 +1,30 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH="$HOME/.oh-my-zsh"
 
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-ZSH_DISABLE_COMPFIX=true
-
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git macos brew vscode)
-
+plugins=(git macos brew vscode zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # User configuration
 
-
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
+alias zshconfig="cursor ~/.zshrc"
+alias ohmyzsh="cursor ~/.oh-my-zsh"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias o="open"
 alias oo="open ."
+alias twistlp="cd ~/dev/doist/Twist-Landing-Pages"
+alias monorepo="cd ~/dev/doist/fullstack-monorepo"
+alias email="cd ~/dev/doist/Doist-Emails"
 
-export EDITOR="code"
+export EDITOR="cursor"
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+# Set AWS profile
+# export AWS_PROFILE=""
+
+eval "$(fnm env --use-on-cd)"
+eval "$(starship init zsh)"
+
+envi() {
+  op  inject --in-file "${HOME}/.zshsecrets" | while read -r line; do
+    eval "$line"
+  done
+}
