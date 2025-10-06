@@ -4,10 +4,6 @@ DotFiles for setting up a machine
 
 - [Zsh](http://www.zsh.org/)
 
-## Terminal
-
-- Font [FuraCode Nerd Complete](https://github.com/ryanoasis/nerd-fonts)
-
 ## Getting going
 
 1. Install [Homebrew](https://brew.sh/)
