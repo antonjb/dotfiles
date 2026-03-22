@@ -1,0 +1,6 @@
+--target=~
+--ignore=.stowrc
+--ignore=alfred/*
+--ignore=.macos
+--ignore=bootstrap.sh
+--ignore=DS_Store
