@@ -1,11 +1,11 @@
-# Store in ~/.config/ghostty/
 background-opacity = 0.95
 background-blur = true
 copy-on-select = clipboard
 font-family = "FiraCode Nerd Font Mono"
 font-size = 18
 macos-icon = blueprint
-theme = "catppuccin-frappe.conf"
+theme = "Catppuccin Frappe"
 window-padding-color = background
 window-padding-x = 20
 window-padding-y = 20
+keybind = shift+enter=text:\x1b\r

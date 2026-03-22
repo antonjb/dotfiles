@@ -1,0 +1,21 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = zed --wait
+[difftool]
+	prompt = false
+	trustExitCode = true
+[init]
+	defaultBranch = main
+[gpg]
+  format = ssh
+[commit]
+  gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pager]
+	diff = diffnav
+[include]
+    path = ~/.gitconfig.local
