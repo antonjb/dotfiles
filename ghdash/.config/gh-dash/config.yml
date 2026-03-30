@@ -13,26 +13,31 @@ prSections:
       is:open
       involves:@me
       -author:@me
+  - title: Me last week
+    filters: >-
+      author:@me
+      owner:Doist
+      created:>{{ nowModify "-1w2d" }}
   - title: Omar
     filters: >-
       author:odsamuels
       owner:Doist
-      created:>{{ nowModify "-1w" }}
+      created:>{{ nowModify "-1w2d" }}
   - title: Dawid
     filters: >-
       author:dmgawel
       owner:Doist
-      created:>{{ nowModify "-1w" }}
+      created:>{{ nowModify "-1w2d" }}
   - title: David
     filters: >-
       author:miottid
       owner:Doist
-      created:>{{ nowModify "-1w" }}
+      created:>{{ nowModify "-1w2d" }}
   - title: Jef
     filters: >-
       author:JefCurtis
       owner:Doist
-      created:>{{ nowModify "-1w" }}
+      created:>{{ nowModify "-1w2d" }}
 issuesSections:
   - title: Brand Dev
     filters: >-

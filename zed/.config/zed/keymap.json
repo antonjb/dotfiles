@@ -18,4 +18,33 @@
       // "j k": "vim::NormalBefore"
     },
   },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-k right": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "right"
+        }
+      ],
+      "cmd-k left": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "left"
+        }
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "cmd-k right": "pane::SplitRight"
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "cmd-k left": "pane::SplitLeft"
+    }
+  }
 ]
