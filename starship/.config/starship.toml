@@ -1,26 +1,20 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](red)\
+[\uE0B6](red)\
 $os\
-$username\
-[](bg:peach fg:red)\
+[\uE0B4 ](fg:red)\
+[\uE0B6](fg:peach)\
 $directory\
-[](bg:yellow fg:peach)\
+[█\uE0CC ](bg:yellow fg:peach)\
 $git_branch\
 $git_status\
-[](fg:yellow bg:green)\
-$c\
-$rust\
-$golang\
+[█\uE0CC ](fg:yellow bg:green)\
 $nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
+$bun\
 $python\
-[](fg:green bg:lavender)\
-$time\
+[\uE0CC ](fg:green bg:lavender)\
+$memory_usage\
 [ ](fg:lavender)\
 $cmd_duration\
 $line_break\
@@ -53,12 +47,6 @@ Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
-[username]
-show_always = true
-style_user = "bg:red fg:crust"
-style_root = "bg:red fg:crust"
-format = '[ $user]($style)'
-
 [directory]
 style = "bg:peach fg:crust"
 format = "[ $path ]($style)"
@@ -86,38 +74,8 @@ symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
-[c]
-symbol = " "
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
-
-[rust]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
-
-[golang]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
-
-[php]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
-
-[java]
-symbol = " "
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
-
-[kotlin]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
-
-[haskell]
-symbol = ""
+[bun]
+symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
@@ -126,16 +84,12 @@ symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:crust bg:green)]($style)'
 
-[docker_context]
-symbol = ""
-style = "bg:sapphire"
-format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
-
-[conda]
-symbol = "  "
-style = "fg:crust bg:sapphire"
-format = '[$symbol$environment ]($style)'
-ignore_base = false
+[memory_usage]
+disabled = false
+threshold = -1
+style = 'bg:lavender black'
+symbol = '󰍛'
+format='[ $symbol ${ram_pct}]($style)'
 
 [time]
 disabled = false
