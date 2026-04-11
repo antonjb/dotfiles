@@ -20,8 +20,7 @@ alias polypane="/Applications/Polypane.app/Contents/MacOS/Polypane"
 export EDITOR="zed --wait"
 export VISUAL="zed --wait"
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
-# Set AWS profile
-# export AWS_PROFILE=""
+export AWS_PROFILE="BrandDevPermissionSet-011833101604"
 
 eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
@@ -32,6 +31,13 @@ envi() {
     eval "$line"
   done
 }
+
+update() {
+    bubu
+    tw update
+    td update
+}
+
 # bun completions
 [ -s "/Users/anton/.bun/_bun" ] && source "/Users/anton/.bun/_bun"
 

@@ -87,7 +87,7 @@ format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:crust bg:green)]($style)'
 [memory_usage]
 disabled = false
 threshold = -1
-style = 'bg:lavender black'
+style = 'bg:lavender base'
 symbol = '󰍛'
 format='[ $symbol ${ram_pct}]($style)'
 
