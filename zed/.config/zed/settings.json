@@ -7,7 +7,8 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-	"indent_guides": {
+  "diff_view_style": "split",
+  "indent_guides": {
 		"background_coloring": "disabled",
 		"coloring": "indent_aware"
 	},
@@ -37,7 +38,8 @@
 		"Astro": { "formatter": { "language_server": { "name": "biome" } } },
 		"CSS": { "formatter": { "language_server": { "name": "biome" } } },
 		"Git Commit": {
-			"soft_wrap": "editor_width",
+			"hard_tabs": false,
+   "soft_wrap": "none",
 			"preferred_line_length": 80
 		},
 		"HTML": { "formatter": { "language_server": { "name": "biome" } } },
@@ -54,7 +56,8 @@
 	},
 	"base_keymap": "VSCode",
 	"agent": {
-		"message_editor_min_lines": 6,
+		"dock": "right",
+  "message_editor_min_lines": 6,
 		"favorite_models": [],
 		"model_parameters": [],
 		"enable_feedback": false

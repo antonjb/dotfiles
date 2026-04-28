@@ -38,6 +38,10 @@ update() {
     td update
 }
 
+ghosttyDefault() {
+    osascript ~/.config/ghostty/ghostty-default-views.applescript
+}
+
 # bun completions
 [ -s "/Users/anton/.bun/_bun" ] && source "/Users/anton/.bun/_bun"
 
