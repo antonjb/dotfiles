@@ -116,9 +116,9 @@ defaults:
 keybindings:
   prs:
     - key: T
-      command: gh enhance -R {{.RepoName}} {{.PrNumber}}
-    - key: C
-      command: cd {{.RepoPath }}; claude "/pr-review {{.PrNumber}}"
+      command: osascript ~/.config/ghostty/ghostty-new-tab.applescript "gh enhance -R {{.RepoName}} {{.PrNumber}}"
+    - key: L
+      command: osascript ~/.config/ghostty/ghostty-new-tab.applescript "cd {{.RepoPath }}; claude \"/pr-review {{.PrNumber}}\""
 repoPaths: { Doist/*: /Users/anton/dev/doist/* }
 theme:
   ui:
