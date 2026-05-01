@@ -16,6 +16,7 @@ alias twistlp="cd ~/dev/doist/Twist-Landing-Pages"
 alias monorepo="cd ~/dev/doist/fullstack-monorepo"
 alias email="cd ~/dev/doist/Doist-Emails"
 alias polypane="/Applications/Polypane.app/Contents/MacOS/Polypane"
+alias bearcli='/Applications/Bear.app/Contents/MacOS/bearcli'
 
 export EDITOR="zed --wait"
 export VISUAL="zed --wait"
