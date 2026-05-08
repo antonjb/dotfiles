@@ -23,6 +23,7 @@ brew install gh
 brew install git
 brew install imagemagick
 brew install jq
+brew install mole
 brew install repomix
 brew install sops
 brew install starship

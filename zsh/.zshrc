@@ -22,6 +22,7 @@ export EDITOR="zed --wait"
 export VISUAL="zed --wait"
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 export AWS_PROFILE="BrandDevPermissionSet-011833101604"
+export DISABLE_TELEMETRY=1
 
 eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"

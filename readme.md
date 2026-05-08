@@ -8,7 +8,7 @@ DotFiles for setting up a machine
 
 1. Install [Homebrew](https://brew.sh/)
 2. Run `brew` to setup and install software
-3. Run `stow diffnav ghdash ghostty git starship zed zsh`
+3. Run `stow diffnav ghdash ghostty git starship zed zsh hunk`
 
 ## Outside of Brew/ZSH
 
