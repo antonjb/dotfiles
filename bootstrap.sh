@@ -9,6 +9,7 @@ brew tap homebrew/cask-fonts
 brew tap homebrew/cask-versions
 
 # Install
+brew install agavra/tap/tuicr
 brew install awscli
 brew install contentful-cli
 brew install diffnav
