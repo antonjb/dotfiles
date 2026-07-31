@@ -1,0 +1,12 @@
+theme = "catppuccin-frappe"
+diff_view = "side-by-side"
+wrap = true
+
+comment_types = [
+    { id = "suggestion", label = "SUGGESTION", color = "#8caaee", definition = "a concrete proposed change; author may accept or decline with a reason" },
+    { id = "question", label = "QUESTION", color = "#e5c890", definition = "ask for clarification; not a request for change until answered" },
+    { id = "blocker", label = "BLOCKER", color = "#e78284", definition = "must be fixed before merge; correctness, security, data loss, or API compatibility" },
+    { id = "nitpick", label = "NIT", color = "#949cbb", definition = "trivial preference, non-blocking; author may ignore without replying" },
+    { id = "praise", label = "PRAISE", color = "#a6d189", definition = "highlight something done well; never requires action" },
+    { id = "note", label = "NOTE", color = "#99d1db", definition = "context or FYI for future readers; no action requested" },
+]

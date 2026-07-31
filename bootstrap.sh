@@ -9,6 +9,7 @@ brew tap homebrew/cask-fonts
 brew tap homebrew/cask-versions
 
 # Install
+brew install agavra/tap/tuicr
 brew install awscli
 brew install contentful-cli
 brew install diffnav
@@ -28,6 +29,7 @@ brew install repomix
 brew install sops
 brew install starship
 brew install stow
+brew install todoist-cli
 brew install uv
 brew install wget
 brew install yazi

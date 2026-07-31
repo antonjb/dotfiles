@@ -17,6 +17,12 @@ alias monorepo="cd ~/dev/doist/fullstack-monorepo"
 alias email="cd ~/dev/doist/Doist-Emails"
 alias polypane="/Applications/Polypane.app/Contents/MacOS/Polypane"
 alias bearcli='/Applications/Bear.app/Contents/MacOS/bearcli'
+alias yarn="corepack yarn"
+alias yarnpkg="corepack yarnpkg"
+alias pnpm="corepack pnpm"
+alias pnpx="corepack pnpx"
+alias npm="corepack npm"
+alias npx="corepack npx"
 
 export EDITOR="zed --wait"
 export VISUAL="zed --wait"
@@ -36,8 +42,7 @@ envi() {
 
 update() {
     bubu
-    tw update
-    td update
+    tdc update
 }
 
 ghosttyDefault() {
@@ -50,3 +55,4 @@ ghosttyDefault() {
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+source /Users/anton/.config/fzf/fzf-git.sh
