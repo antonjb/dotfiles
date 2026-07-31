@@ -28,6 +28,7 @@ brew install repomix
 brew install sops
 brew install starship
 brew install stow
+brew install todoist-cli
 brew install uv
 brew install wget
 brew install yazi
