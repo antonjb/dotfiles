@@ -117,6 +117,8 @@ keybindings:
   prs:
     - key: T
       command: osascript ~/.config/ghostty/ghostty-new-tab.applescript "gh enhance -R {{.RepoName}} {{.PrNumber}}"
+    - key: U
+      command: osascript ~/.config/ghostty/ghostty-tuicr-pr.applescript "{{.PrNumber}}" "{{.RepoPath}}"
     - key: L
       command: osascript ~/.config/ghostty/ghostty-new-tab.applescript "cd {{.RepoPath }}; claude \"/pr-review {{.PrNumber}}\""
 repoPaths: { Doist/*: /Users/anton/dev/doist/* }
