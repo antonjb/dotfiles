@@ -44,7 +44,7 @@ brew install --cask bitwarden
 brew install --cask bruno
 brew install --cask cleanshot
 brew install --cask daisydisk
-brew install --cask dash6
+brew install --cask dash
 brew install --cask discord
 brew install --cask google-chrome
 brew install --cask google-chrome-canary
