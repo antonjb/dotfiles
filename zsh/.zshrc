@@ -22,6 +22,9 @@ alias pnpx="corepack pnpx"
 alias npm="corepack npm"
 alias npx="corepack npx"
 
+unalias l 2>/dev/null
+alias l='eza --oneline --all --group-directories-first --icons=auto --hyperlink=auto'
+
 export EDITOR="zed --wait"
 export VISUAL="zed --wait"
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
