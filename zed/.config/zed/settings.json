@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "git_panel": {
+    "group_by": "staging"
+  },
   "cli_default_open_behavior": "new_window",
   "diff_view_style": "split",
   "indent_guides": {
@@ -17,16 +20,18 @@
 		"breadcrumbs": true
 	},
 	"terminal": {
-		"shell": "system"
+		"font_size": 18.0,
+  "font_family": "FiraCode Nerd Font Mono",
+  "shell": "system"
 	},
 	"project_panel": {
 		"default_width": 240.0,
 		"dock": "left"
 	},
 	"title_bar": {
-		"show_user_menu": true,
-		"show_sign_in": false,
-		"show_branch_icon": true
+		"show_branch_status_icon": true,
+    "show_user_menu": true,
+		"show_sign_in": false
 	},
 	"tab_bar": {
 		"show_pinned_tabs_in_separate_row": false
@@ -57,7 +62,8 @@
 	},
 	"base_keymap": "VSCode",
 	"agent": {
-		"dock": "right",
+		"play_sound_when_agent_done": "when_hidden",
+  "dock": "left",
   "message_editor_min_lines": 6,
 		"favorite_models": [],
 		"model_parameters": [],
@@ -67,10 +73,10 @@
 	"buffer_line_height": "comfortable",
 	"ui_font_weight": 400.0,
 	"agent_servers": {
-		"gemini": {
-			"type": "registry"
-		},
-		"claude-acp": {
+		"codex-acp": {
+		  "type": "registry"
+    },
+    "claude-acp": {
 			"type": "registry"
 		}
 	},
