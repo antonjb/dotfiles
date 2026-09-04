@@ -62,7 +62,7 @@ brew install --cask ghostty
 brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask google-chrome-canary
-brew install --cask kaleidoscope
+brew install --cask kaleidoscope@3
 brew install --cask microsoft-edge
 brew install --cask moom
 brew install --cask ngrok
