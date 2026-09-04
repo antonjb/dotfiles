@@ -4,6 +4,7 @@ copy-on-select = clipboard
 font-family = "FiraCode Nerd Font Mono"
 font-size = 18
 macos-icon = blueprint
+split-divider-color = E87600
 theme = "Catppuccin Frappe"
 window-padding-color = background
 window-padding-x = 20
