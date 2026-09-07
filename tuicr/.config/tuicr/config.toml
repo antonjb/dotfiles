@@ -10,3 +10,6 @@ comment_types = [
     { id = "praise", label = "PRAISE", color = "#a6d189", definition = "highlight something done well; never requires action" },
     { id = "note", label = "NOTE", color = "#99d1db", definition = "context or FYI for future readers; no action requested" },
 ]
+
+[forge]
+comment_type_prefix = false
