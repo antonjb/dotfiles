@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git macos brew zsh-autosuggestions)
+plugins=(aliases git macos brew zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 
@@ -35,12 +35,6 @@ eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-envi() {
-  op  inject --in-file "${HOME}/.zshsecrets" | while read -r line; do
-    eval "$line"
-  done
-}
-
 update() {
     bubu
     tdc update
@@ -49,6 +43,8 @@ update() {
 ghosttyDefault() {
     osascript ~/.config/ghostty/ghostty-default-views.applescript
 }
+
+[ -s "${HOME}/.zshsecrets" ] && source "${HOME}/.zshsecrets"
 
 # bun completions
 [ -s "/Users/anton/.bun/_bun" ] && source "/Users/anton/.bun/_bun"
