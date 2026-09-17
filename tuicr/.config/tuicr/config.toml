@@ -1,5 +1,6 @@
 theme = "catppuccin-frappe"
 diff_view = "side-by-side"
+scroll_offset = 18
 wrap = true
 
 comment_types = [
