@@ -11,8 +11,8 @@ brew tap homebrew/cask-versions
 # Install
 brew install agavra/tap/tuicr
 brew install awscli
+brew install bat
 brew install contentful-cli
-brew install diffnav
 brew install docker
 brew install docker-completion
 brew install docker-compose
@@ -20,7 +20,6 @@ brew install eza
 brew install ffmpeg
 brew install fnm
 brew install fzf
-brew install gemini-cli
 brew install gh
 brew install git
 brew install imagemagick
@@ -35,7 +34,6 @@ brew install todoist-cli
 brew install tuicr
 brew install uv
 brew install wget
-brew install yazi
 brew install yt-dlp
 brew install zoxide
 
