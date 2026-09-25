@@ -22,6 +22,7 @@ alias pnpx="corepack pnpx"
 alias npm="corepack npm"
 alias npx="corepack npx"
 alias gbv="git branch --verbose | bat"
+alias cat="bat"
 
 unalias l 2>/dev/null
 alias l='eza --oneline --all --group-directories-first --icons=auto --hyperlink=auto'
