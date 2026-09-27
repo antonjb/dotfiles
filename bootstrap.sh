@@ -36,6 +36,7 @@ brew install uv
 brew install wget
 brew install yt-dlp
 brew install zoxide
+brew install zsh-syntax-highlighting
 
 # Casks
 brew install --cask 1password
