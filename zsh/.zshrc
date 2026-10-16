@@ -59,7 +59,7 @@ ghe() {
 }
 
 prnum() {
-    gh pr view --json number --jq '.number' | pbcopy
+    printf '%s' "$(gh pr view --json number --jq '.number')" | pbcopy
 }
 
 [ -s "${HOME}/.zshsecrets" ] && source "${HOME}/.zshsecrets"
