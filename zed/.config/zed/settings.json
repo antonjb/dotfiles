@@ -17,10 +17,14 @@
 		"coloring": "indent_aware"
 	},
 	"toolbar": {
-		"breadcrumbs": true
+		"code_actions": false,
+  "breadcrumbs": true
 	},
 	"terminal": {
-		"font_size": 18.0,
+		"toolbar": {
+   "breadcrumbs": false
+  },
+  "font_size": 18.0,
   "font_family": "FiraCode Nerd Font Mono",
   "shell": "system"
 	},
@@ -75,7 +79,11 @@
 	"ui_font_weight": 400.0,
 	"agent_servers": {
 		"codex-acp": {
-		  "type": "registry"
+		  "default_config_options": {
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "high"
+    },
+    "type": "registry"
     },
     "claude-acp": {
 			"type": "registry"
