@@ -54,6 +54,14 @@ ghosttyDefault() {
     osascript ~/.config/ghostty/ghostty-default-views.applescript
 }
 
+ghe() {
+    gh enhance $(gh pr view --json number --jq '.number')
+}
+
+prnum() {
+    gh pr view --json number --jq '.number' | pbcopy
+}
+
 [ -s "${HOME}/.zshsecrets" ] && source "${HOME}/.zshsecrets"
 
 # bun completions
