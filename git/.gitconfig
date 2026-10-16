@@ -1,6 +1,8 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = zed --wait
+[diff]
+    algorithm = histogram
 [difftool]
 	prompt = false
 	trustExitCode = true
@@ -19,3 +21,5 @@
 	diff = diffnav
 [include]
     path = ~/.gitconfig.local
+[rerere]
+	enabled = true
