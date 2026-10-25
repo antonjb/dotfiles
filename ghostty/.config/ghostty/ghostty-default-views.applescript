@@ -21,7 +21,7 @@ tell application "Ghostty"
 	set termAssistant to focused terminal of selected tab of mainWindow
 end tell
 
-my runCommand(termAssistant, "z llm && claude")
+my runCommand(termAssistant, "z hermes && hermes")
 
 tell application "Ghostty"
 	set termAssistantSplit to split termAssistant direction right
