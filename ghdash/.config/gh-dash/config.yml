@@ -115,6 +115,12 @@ defaults:
   refetchIntervalMinutes: 30
 keybindings:
   prs:
+    - key: ctrl+e
+      name: Open PR in gh enhance
+      command: rex split -s "$REX_SESSION" -b "$REX_BLOCK" --split=right -- gh enhance -R "{{.RepoName}}" {{.PrNumber}}
+    - key: ctrl+u
+      name: Review PR in tuicr
+      command: rex split -s "$REX_SESSION" -b "$REX_BLOCK" --split=right -c "{{.RepoPath}}" -- tuicr pr {{.PrNumber}}
     - key: T
       command: osascript ~/.config/ghostty/ghostty-new-tab.applescript "gh enhance -R {{.RepoName}} {{.PrNumber}}"
     - key: U
