@@ -4,6 +4,9 @@
 brew update
 brew upgrade
 
+# Trust
+brew trust --formula devvmhq/tap/devvm
+
 # Tap
 brew tap homebrew/cask-fonts
 brew tap homebrew/cask-versions
@@ -13,6 +16,7 @@ brew install agavra/tap/tuicr
 brew install awscli
 brew install bat
 brew install contentful-cli
+brew install devvmhq/tap/devvm
 brew install docker
 brew install docker-completion
 brew install docker-compose
