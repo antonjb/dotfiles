@@ -7,7 +7,7 @@ prSections:
     filters: >-
       is:open
       review-requested:@me
-      owner:Doist
+      owner:Todoist
   - title: Involved
     filters: >-
       is:open
@@ -16,32 +16,32 @@ prSections:
   - title: Me last week
     filters: >-
       author:@me
-      owner:Doist
+      owner:Todoist
       created:>{{ nowModify "-1w2d" }}
   - title: Omar
     filters: >-
       author:odsamuels
-      owner:Doist
+      owner:Todoist
       created:>{{ nowModify "-1w2d" }}
   - title: Dawid
     filters: >-
       author:dmgawel
-      owner:Doist
+      owner:Todoist
       created:>{{ nowModify "-1w2d" }}
   - title: David
     filters: >-
       author:miottid
-      owner:Doist
+      owner:Todoist
       created:>{{ nowModify "-1w2d" }}
   - title: Jef
     filters: >-
       author:JefCurtis
-      owner:Doist
+      owner:Todoist
       created:>{{ nowModify "-1w2d" }}
 issuesSections:
   - title: Brand Dev
     filters: >-
-      project:Doist/87
+      project:Todoist/87
       is:open
   - title: My Issues
     filters: is:open author:@me
@@ -127,7 +127,7 @@ keybindings:
       command: osascript ~/.config/ghostty/ghostty-tuicr-pr.applescript "{{.PrNumber}}" "{{.RepoPath}}"
     - key: L
       command: osascript ~/.config/ghostty/ghostty-new-tab.applescript "cd {{.RepoPath }}; claude \"/pr-review {{.PrNumber}}\""
-repoPaths: { Doist/*: /Users/anton/dev/doist/* }
+repoPaths: { Todoist/*: /Users/anton/dev/doist/* }
 theme:
   ui:
     sectionsShowCount: true
