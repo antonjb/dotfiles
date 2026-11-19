@@ -127,7 +127,7 @@ keybindings:
       command: osascript ~/.config/ghostty/ghostty-tuicr-pr.applescript "{{.PrNumber}}" "{{.RepoPath}}"
     - key: L
       command: osascript ~/.config/ghostty/ghostty-new-tab.applescript "cd {{.RepoPath }}; claude \"/pr-review {{.PrNumber}}\""
-repoPaths: { Todoist/*: /Users/anton/dev/doist/* }
+repoPaths: { todoist/*: /Users/anton/dev/doist/* }
 theme:
   ui:
     sectionsShowCount: true
