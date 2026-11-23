@@ -31,6 +31,10 @@ alias npm="corepack npm"
 alias npx="corepack npx"
 alias gbv="git branch --verbose | bat"
 alias cat="bat"
+alias gfp='gfa && gl'
+alias zr='zed -r .'
+alias prw='gh pr view --web'
+alias prnew='gh pr create --assignee @me'
 
 unalias l 2>/dev/null
 alias l='eza --oneline --all --group-directories-first --icons=auto --hyperlink=auto'
